@@ -29,7 +29,7 @@ def scrape(url):
 def soup2HTML(url, path):
     soup = scrape(url)
     # create the file if not exist and write the scrapped code or text
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(str(soup))
 
 
